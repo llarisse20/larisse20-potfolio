@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fbfcfd;
+}
+
+
+/* Codigo do primeira parte do parallax dentro da pagina web  */
+
+.parallax {
+    background-image: linear-gradient(217deg, rgba(255,0,0,.7), rgba(255,0,0,0) 70%), 
+    linear-gradient(127deg, rgba(55,200,200,.8), rgba(55,200,200,0) 70%),
+    linear-gradient(336deg, rgba(0,0,255,.9), rgba(0,0,255,0) 70%); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Codigo da segunda parte do parallax dentro da pagina web  */ 
+
+.parallax2 {
+    background-image: radial-gradient(ellipse at top, #e66465, transparent), 
+    radial-gradient(circle at 10%, #1974d1, transparent);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+/* Codigo do Titulo Larisse Nascimento */ 
+
+h1:hover {
+    color: blue; /* Mudança de cor para azul ao passar o mouse */
+    transition: color 0.8s ease; /* Adiciona uma transição suave */
+}
+  
+  
+p {
+    font-size: 18px;
+   
+    color: black;
+}
+
+
+.titulo h1 {
+    font-size: 3em;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.conteudo:hover {
+    color: rgb(214, 13, 154); /* Mudança de cor para azul ao passar o mouse */
+    transition: color 0.8s ease; /* Adiciona uma transição suave */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+    
+}
+
+/* Codigo da div redes sociais no qual, centralizei e ajustei os icones das minhas redes sociais  */
+
+.container {
+    display: flex;
+    justify-content: center; 
+    width: 90%; /* Largura relativa do contêiner */
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+
+
+    
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: center; 
+}
+
+.rede-sociais a {
+    margin: 0 10px; /* Adiciona margem entre os ícones (opcional) */
+
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: center; 
+     
+}
+
+
+.projetos {
+    padding: 20px;
+    background-color: #57f5b657;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Defina a largura desejada, por exemplo, 80% da largura da janela do navegador */
+    max-width: 800px; /* Largura máxima do contêiner */
+
+}
+
+.projeto {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c42727;
+    padding-bottom: 20px;
+}
+
+.projeto:last-child {
+    border-bottom: none; /* Remove a borda inferior do último projeto */
+}
+
+h3 {
+    color: black; /* Define a cor do texto como vermelho usando valores RGB */
+
+}
+
+
+.conteudo p {
+    font-size: 20px; /* Define o tamanho da fonte como 14 pixels */
+    transition: color 0.2s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+
+
+/* Media query do site web */
+
+/* Media query para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .titulo h1 {
+        font-size: 2em; /* Reduz o tamanho do título em telas menores */
+    }
+    .conteudo {
+        padding: 20px; /* Reduz o preenchimento do conteúdo em telas menores */
+    }
+    .projetos {
+        width: 90%; /* Ajusta a largura do contêiner de projetos para telas menores */
+        margin: 20px auto; /* Centraliza o contêiner de projetos em telas menores */
+    }
+}
+
+/* Media query para telas menores que 576px em modo paisagem) */
+@media screen and (max-width: 576px) {
+    .titulo h1 {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho do título em telas muito pequenas */
+    }
+    .conteudo {
+        padding: 10px; /* Reduz ainda mais o preenchimento do conteúdo em telas muito pequenas */
+    }
+}
